@@ -28,7 +28,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
       // Login bem-sucedido
       showNotification('Login bem-sucedido', 'success');
       // Redirecionando para o dashboard após login bem-sucedido
-      window.location.href = 'dashboard.html';
+      window.location.href = 'page1.html';
     })
     .catch((error) => {
       // Erros no login
