@@ -21,7 +21,7 @@ auth.onAuthStateChanged(user => {
   const fromDashboard = sessionStorage.getItem('fromDashboard');
   if (!user || !fromDashboard) {
     // Se o usuário não estiver logado ou não veio do dashboard, redirecione para a tela de login
-    window.location.href = 'bot.html';
+    window.location.href = 'page1.html';
   } else {
     // Remova a flag de sessionStorage para garantir que precise passar pelo dashboard novamente
     sessionStorage.removeItem('fromDashboard');
