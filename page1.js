@@ -17,9 +17,6 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
 // Verificando se o usuário está autenticado e se veio do dashboard
-auth.onAuthStateChanged(user => {
-  const fromDashboard = sessionStorage.getItem('fromDashboard');
-  if (!user || !fromDashboard) {
     // Se o usuário não estiver logado ou não veio do dashboard, redirecione para a tela de login
     window.location.href = 'page1.html';
   } else {
