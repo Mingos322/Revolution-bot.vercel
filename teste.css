@@ -1,0 +1,290 @@
+/* Reset and Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Courier New', monospace;
+  color: rgb(0, 140, 255);
+}
+
+/* Toolbar Styles */
+.toolbar {
+  background-color: #000;
+  color: rgb(5, 163, 255);
+  padding: 20px; /* Increased padding for a taller toolbar */
+  display: flex;
+  justify-content: space-between; /* Adjusted alignment for better organization */
+  align-items: center;
+  border-bottom: 1px solid rgb(0, 119, 255);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 162, 255);
+  cursor: pointer;
+  padding: 10px 20px; /* Adjusted button padding */
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#currentTime {
+  font-size: 18px; /* Adjusted font size for current time display */
+}
+
+/* ... (Rest of your existing styles) */
+
+button {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 255, 64);
+  cursor: pointer;
+  padding: 5px 10px;
+  font-family: 'Courier New', monospace;
+  /* Adicione um efeito de texto distorcido */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* ... (mantenha o código anterior) */
+
+.time-square,
+.random-number-square {
+  background-color: transparent; /* Torna o fundo dos quadrados de tempo e números aleatórios transparente */
+  color: #0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 5px;
+  /* Adicione um efeito de texto distorcido */
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Estilize todos os elementos com a classe .info-square */
+.info-square {
+  position: relative; /* Permite posicionar elementos filhos relativamente a este elemento */
+  background-color: transparent;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  /* Adicione outras propriedades de estilo conforme necessário */
+}
+#currentTime,
+#randomInfo {
+  margin: 0;
+}
+
+iframe {
+  position: absolute;
+  top: 80px; /* Altura da barra de ferramentas */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px); /* Subtrai a altura da barra de ferramentas */
+  border: none;
+}
+
+/* Estilize todos os elementos com a classe .random-time-square */
+.random-time-square {
+  background-color: transparent; /* Torna o fundo dos quadrados de tempo aleatório transparente */
+  color: #0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border-radius: 5px;
+  /* Adicione uma animação de texto distorcido */
+  animation: glitch 0.5s infinite;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, 2px);
+  }
+}
+
+/* ... (mantenha o código anterior) */
+/* Animação para o botão "Voltar" */
+#backBtn {
+  background-color: transparent; /* Altera o fundo para transparente */
+  color: rgb(0, 255, 55);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  position: relative;
+  /* Adicione um efeito de texto distorcido */
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#backBtn:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid rgb(0, 255, 34);
+  border-bottom: 2px solid rgb(0, 255, 21);
+  transform: rotate(-45deg);
+  top: 50%;
+  left: -15px;
+  transition: transform 0.3s;
+  opacity: 0;
+}
+
+#backBtn:hover {
+  background-color: transparent; /* Altera o fundo para transparente no hover */
+}
+
+#backBtn:hover:before {
+  transform: translate(-2px, -2px) rotate(-45deg);
+  opacity: 1;
+}
+/* Restante do código permanece o mesmo */
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro semi-transparente */
+  z-index: 999; /* Garante que a sobreposição fique acima de todos os outros elementos */
+}
+
+.modal {
+  background-color: #312a2a;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+#verificationCode {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#verifyButton {
+  background-color: #00d962;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro semi-transparente */
+  z-index: 999; /* Garante que a sobreposição fique acima de todos os outros elementos */
+  backdrop-filter: blur(5px); /* Aplica o efeito de desfoque ao fundo */
+}
+/* Estilize o elemento que exibe os números aleatórios */
+#randomNumber {
+  margin: 0;
+  font-size: 18px; /* Tamanho da fonte para os números aleatórios */
+  font-weight: bold;
+}
+#progressBarContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: 20px;
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0;
+  background-color: #00d962; /* Cor de preenchimento da barra de progresso */
+  transition: width 0.5s ease-in-out;
+}
+
+#progressFill {
+  height: 100%;
+}
+
+#percentageLabel {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #000;
+}
+#marketPercentageContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+}
+
+#marketPercentageName {
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+#marketPercentageBar {
+  width: 100%;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#marketPercentageFill {
+  height: 100%;
+  width: 50%;
+  background-color: #03b830;
+  transition: width 0.5s ease-in-out;
+}
+
+#marketPercentageLabel {
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+  font-size: 16px;
+}

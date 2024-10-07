@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="page1.js" defer></script>
+</head>
+<body>
+  <button id="logout-btn" class="logout-btn">Logout</button>
+  
+  <div class="floating-clock-container">
+    <span id="clock"></span>
+  </div>
+
+  <!-- iframe para carregar o site -->
+  <div class="iframe-container">
+    <iframe id="external-site" frameborder="0"></iframe>
+  </div>
+
+  <div id="functions-container" class="floating-functions-container">
+    <div id="drag-header" class="drag-header">MENU</div>
+    <div class="functions-subdivision">
+      Pegue 4x em:
+      <div id="countdown"></div>
+    </div>
+    <div class="functions-subdivision">
+      Proteção:
+      <div id="random-number"></div>
+      <div id="update-info"></div>
+    </div>
+    <div class="functions-subdivision">
+      Saída:
+      <div id="random-number-3"></div>
+      <div id="update-info-3"></div>
+    </div>
+    <div class="functions-subdivision">
+      Velas Rosas:
+      <div id="random-number-4" style="display: none;"></div>
+      <div id="update-info-4"></div>
+    </div>
+  </div>
+</body>
+</html>
+

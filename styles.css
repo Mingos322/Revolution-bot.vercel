@@ -1,0 +1,449 @@
+/* Estilos comuns */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('fundo.jpg') no-repeat center center/cover;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+#notification {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .login-container, .dashboard-container {
+    padding: 15px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+/* Estilos para o contêiner de login */
+.login-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Outros estilos necessários para a página de login */
+body {
+  background: url('path/to/your/background-image.jpg') no-repeat center center fixed;  /* URL da sua imagem de fundo */
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Outros estilos necessários
+
+
+
+/* Estilos específicos da tela de login */
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+
+.login-container h1, .login-container h2 {
+  color: #333;
+}
+
+.login-container h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Estilos específicos da tela de dashboard */
+.dashboard-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+
+.dashboard-container h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.dashboard-container p {
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.dashboard-button {
+  background: transparent;
+  border: 2px solid #007BFF;
+  color: #007BFF;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+  animation: blink 1.5s linear infinite;
+}
+
+.dashboard-button:hover {
+  background: #007BFF;
+  color: #fff;
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: #007BFF;
+  }
+  
+  50% {
+    border-color: #0056b3;
+  }
+}
+
+/* Estilos específicos da página 1 */
+.page-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+
+.page-container h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.page-container p {
+  margin-bottom: 20px;
+}
+
+.floating-clock-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.5em;
+  z-index: 1000;
+}
+
+
+
+.content-container {
+  flex: 1;
+  width: 100%;
+}
+
+.iframe-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Altura total da viewport */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.floating-functions-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  z-index: 1000;
+  cursor: move;
+  transition: height 0.3s ease;
+}
+
+.drag-header {
+  width: 100%;
+  text-align: center;
+  cursor: move;
+  padding: 8px;
+  background: #333;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.functions-subdivision {
+  background: #282c34;
+  color: #61dafb;
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  display: none; /* Inicialmente oculto */
+}
+
+.functions-subdivision:hover {
+  background: #20232a;
+}
+
+.floating-functions-container.occupied .functions-subdivision {
+  display: block; /* Mostrar todas as subdivisões quando ocupado */
+}
+
+
+
+#random-number {
+  font-size: 2em;
+  margin-top: 10px;
+  color: #007BFF;
+}
+
+#update-info {
+  font-size: 1em;
+  margin-top: 5px;
+  color: #FF4500;
+}
+
+#random-number-3 {
+  font-size: 2em;
+  margin-top: 10px;
+  color: #228B22; /* Verde para diferenciar */
+}
+
+#update-info-3 {
+  font-size: 1em;
+  margin-top: 5px;
+  color: #FF4500;
+}
+
+#random-number-4 {
+  font-size: 2em;
+  margin-top: 10px;
+  color: #FF6347; /* Cor diferente para distinção */
+}
+
+#update-info-4 {
+  font-size: 1em;
+  margin-top: 5px;
+  color: #FF4500;
+}
+/* Estilos para o contêiner da hora atual */
+.floating-clock-container {
+  position: fixed;
+  top: 55px;
+  right: 10px;
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Estilos para o botão de logout */
+.logout-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 8px 16px;
+  font-size: 0.9em;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff0000 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #ff4b4b 0%, #cc0000 100%);
+  transform: translateY(-2px);
+}
+
+/* Adicionando Google Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Fonte do Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Configurações gerais do corpo */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Estilos para o botão de logout */
+.logout-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 8px 16px;
+  font-size: 0.9em;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff0000 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #ff4b4b 0%, #cc0000 100%);
+  transform: translateY(-2px);
+}
+
+
+
+.functions-subdivision {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#random-number,
+#random-number-3,
+#random-number-4 {
+  font-size: 2em;
+  margin-top: 10px;
+  color: #FF6347;
+}
+
+#update-info,
+#update-info-3,
+#update-info-4 {
+  font-size: 1em;
+  margin-top: 5px;
+  color: #FF4500;
+}
+
+
